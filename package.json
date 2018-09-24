@@ -1,0 +1,35 @@
+{
+  "name": "@frontendmonster/password",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "frontendmonster <frontendmonster@gmail.com>",
+  "description": "hash and compare passwords",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontendmonster/password.git"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "prelint": "eslint src --fix",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "@frontendmonster/eslint-config": "^1.0.1",
+    "eslint": "^5.5.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.0.0-rc.15"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
