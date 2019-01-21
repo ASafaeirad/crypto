@@ -4,28 +4,34 @@
   "license": "MIT",
   "author": "frontendmonster <frontendmonster@gmail.com>",
   "description": "hash and compare passwords",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/frontendmonster/password.git"
   },
-  "files": [
-    "index.js"
-  ],
   "main": "index.js",
   "scripts": {
-    "prelint": "eslint src --fix",
-    "lint": "eslint src"
+    "clean": "rimraf lib",
+    "prebuild": "npm run clean",
+    "build": "tsc --declaration",
+    "lint": "tslint --project ./tsconfig.json --fix",
+    "publish": "builder"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3"
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.4.0",
+    "rand-token": "^0.4.0"
   },
   "devDependencies": {
-    "@frontendmonster/eslint-config": "^1.0.1",
-    "eslint": "^5.5.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.1",
-    "husky": "^1.0.0-rc.15"
+    "@frontendmonster/builder": "^0.2.0",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^8.3.0",
+    "husky": "^1.0.0-rc.15",
+    "rimraf": "^2.6.3",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.4"
   },
   "husky": {
     "hooks": {
