@@ -1,13 +1,13 @@
 {
-  "name": "@frontendmonster/password",
+  "name": "@frontendmonster/crypto",
   "version": "2.0.0",
   "license": "MIT",
   "author": "frontendmonster <frontendmonster@gmail.com>",
-  "description": "hash and compare passwords",
+  "description": "useful encryption and jwt utils",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frontendmonster/password.git"
+    "url": "git+https://github.com/frontendmonster/crypto.git"
   },
   "main": "index.js",
   "scripts": {

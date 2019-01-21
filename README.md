@@ -1,11 +1,11 @@
-# password
+# crypto
 
 useful encryption and jwt utils
 
 ## Usage
 
 ```javascript
-import { hash, compare, uid, decode, sign, verify } from '@frontendmonster/password';
+import { hash, compare, uid, decode, sign, verify } from '@frontendmonster/crypto';
 
 const hashedPassword = await hash(password, salt); // hash password with specific salt
 const await compare(userPassword, hasedPassword); // compare hashed passwords
