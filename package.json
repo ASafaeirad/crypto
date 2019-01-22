@@ -18,14 +18,14 @@
     "lib:publish": "builder"
   },
   "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^8.3.0",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^8.4.0",
     "rand-token": "^0.4.0"
   },
   "devDependencies": {
     "@frontendmonster/builder": "^0.2.0",
-    "@types/bcryptjs": "^2.4.2",
-    "@types/jsonwebtoken": "^8.3.0",
     "husky": "^1.0.0-rc.15",
     "rimraf": "^2.6.3",
     "tslint": "^5.12.1",
