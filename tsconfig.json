@@ -1,25 +1,21 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["es6", "es2017", "esnext.asynciterable"],
-    "sourceMap": true,
-    "outDir": "./lib",
     "moduleResolution": "node",
-
-    "removeComments": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "allowSyntheticDefaultImports": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "module": "ES2015",
+    "target": "ES5",
+    "lib": [
+      "dom",
+      "es2020"
+    ],
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "lib/types",
+    "outDir": "lib/esm5",
+    "esModuleInterop": true,
+    "strict": true,
   },
-  "exclude": ["node_modules", "lib"],
-  "include": ["./src/**/*.ts"]
+  "include": [
+    "src/**/*"
+  ],
 }
