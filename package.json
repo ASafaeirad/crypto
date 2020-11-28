@@ -26,8 +26,7 @@
     "build": "tsc && tsc --project ./tsconfig.es2015.json && tsc --project ./tsconfig.cjs.json",
     "lint": "eslint src --ext js,ts",
     "lint:fix": "npm run lint --fix",
-    "prerelease": "builder",
-    "release": "np --contents lib"
+    "release": "builder --publish"
   },
   "dependencies": {
     "bcryptjs": "2.4.3",
@@ -35,8 +34,8 @@
     "nanoid": "3.1.18"
   },
   "devDependencies": {
-    "@frontendmonster/builder": "2.0.1",
-    "@fullstacksjs/eslint-config": "4.1.7",
+    "@frontendmonster/builder": "2.1.2",
+    "@fullstacksjs/eslint-config": "4.1.9",
     "@types/bcryptjs": "2.4.2",
     "@types/jsonwebtoken": "8.5.0",
     "@types/node": "14.14.10",
@@ -52,7 +51,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "lint-staged"
     }
   }
 }
