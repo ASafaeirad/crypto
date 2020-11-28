@@ -9,15 +9,16 @@ export function randomId(len = 16): string {
 export function randomHex(
   len = 16,
   { casing }: { casing: Casing } = { casing: 'lowecase' },
-) {
-  if (casing === 'uppercase')
-    return NanoId.customAlphabet('1234567890ABCDEF', len);
-  if (casing === 'lowecase')
-    return NanoId.customAlphabet('1234567890abcdef', len);
+): string {
+  const generator =
+    casing === 'uppercase'
+      ? NanoId.customAlphabet('1234567890ABCDEF', len)
+      : NanoId.customAlphabet('1234567890abcdef', len);
 
-  throw Error('Wrong Argument');
+  return generator();
 }
 
-export function randomNumber(len = 16) {
-  return NanoId.customAlphabet('1234567890', len);
+export function randomNumber(len = 16): string {
+  const generator = NanoId.customAlphabet('1234567890', len);
+  return generator();
 }
