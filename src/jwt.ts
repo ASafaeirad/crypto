@@ -1,1 +1,1 @@
-export { sign, decode, verify } from 'jsonwebtoken';
+export { decode, sign, verify } from 'jsonwebtoken';

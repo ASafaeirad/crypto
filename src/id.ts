@@ -1,6 +1,6 @@
 import * as NanoId from 'nanoid';
 
-type Casing = 'uppercase' | 'lowecase';
+type Casing = 'lowecase' | 'uppercase';
 
 export function randomId(len = 16): string {
   return NanoId.nanoid(len);
