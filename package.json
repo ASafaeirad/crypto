@@ -32,7 +32,7 @@
   "dependencies": {
     "bcryptjs": "2.4.3",
     "jsonwebtoken": "8.5.1",
-    "nanoid": "3.1.18"
+    "nanoid": "3.1.25"
   },
   "devDependencies": {
     "@frontendmonster/builder": "2.1.2",
